@@ -91,7 +91,7 @@ const Projects = () => {
               <Image src={myDiary} alt="traqo" className="rounded" />
             </div>
             <div className="md:ml-6 text-center">
-              <p className="mb-2 text-xl md:text-3xl text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
+              <p className="mb-2 text-xl md:text-3xl  font-semibold text-neutral-800 dark:text-neutral-200">
                 my<span className="text-blue-400">Diary</span> App
               </p>
               <p className="text-gray-300 text-sm md:text-[16px]">
@@ -149,7 +149,7 @@ const Projects = () => {
               <Image src={newsPaper} alt="newsPaper" className="rounded" />
             </div>
             <div className="md:ml-6 text-center">
-              <p className="mb-2 text-xl md:text-3xl text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
+              <p className="mb-2 text-xl md:text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
                 Khabri<span className="text-blue-400">Bhai</span> App
               </p>
               <p className="text-gray-300 text-sm md:text-[16px]">
@@ -207,7 +207,7 @@ const Projects = () => {
               <Image src={wordTwin} alt="wordTwin" className="rounded" />
             </div>
             <div className="md:ml-6 text-center">
-              <p className="mb-2 text-xl md:text-3xl text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
+              <p className="mb-2 text-xl md:text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
                 Word<span className="text-blue-400">Twin</span> App
               </p>
               <p className="text-gray-300 text-sm md:text-[16px]">
@@ -261,7 +261,7 @@ const Projects = () => {
               <Image src={todo} alt="traqo" className="rounded" />
             </div>
             <div className="md:ml-6 text-center">
-              <p className="mb-2 text-xl md:text-3xl text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
+              <p className="mb-2 text-xl md:text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
                 Task<span className="text-blue-400">Saver</span> App
               </p>
               <p className="text-gray-300 text-sm md:text-[16px]">
@@ -315,7 +315,7 @@ const Projects = () => {
               <Image src={calc} alt="traqo" className="rounded" />
             </div>
             <div className="md:ml-6 text-center">
-              <p className="mb-2 text-xl md:text-3xl text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
+              <p className="mb-2 text-xl md:text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
                 Calculator<span className="text-blue-400">&nbsp; App</span>
               </p>
               <p className="text-gray-300 text-sm md:text-[16px]">
