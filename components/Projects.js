@@ -16,7 +16,7 @@ import "@splidejs/react-splide/css/core";
 const Projects = () => {
   return (
     <div className="mx-auto w-[83%] pt-[4%] text-[#fff]">
-      <span className="text-4xl  border-b-4 border-[#ffdf00]">
+      <span className="text-2xl md:text-4xl border-b-4 border-[#ffdf00]">
         My <span className="text-[#ffdf00]">Projects</span>
       </span>
       {/* Carousel  */}
@@ -36,10 +36,10 @@ const Projects = () => {
               <Image src={tri2do} alt="traqo" className="rounded" />
             </div>
             <div className="md:ml-6 text-center">
-              <p className="mb-2 text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
+              <p className="mb-2 text-xl md:text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
                 Tri2<span className="text-blue-400">Do</span> App
               </p>
-              <p className="text-gray-300">
+              <p className="text-gray-300  text-sm md:text-[16px]">
                 <p>
                   All in one DSA solving platform, with 6 sheets support from
                   different creators. Provided with a smooth UI/UX.
@@ -55,7 +55,7 @@ const Projects = () => {
               </p>
 
               {/* buttons  */}
-              <div className="buttons flex my-2 justify-center gap-4">
+              <div className="buttons text-sm md:text-[16px] flex my-2 justify-center gap-4">
                 {/* button-1  */}
                 <div className="view_demo ">
                   <a href="https://tri2do.vercel.app/" target="_blank">
@@ -91,10 +91,10 @@ const Projects = () => {
               <Image src={myDiary} alt="traqo" className="rounded" />
             </div>
             <div className="md:ml-6 text-center">
-              <p className="mb-2 text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
+              <p className="mb-2 text-xl md:text-3xl text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
                 my<span className="text-blue-400">Diary</span> App
               </p>
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-sm md:text-[16px]">
                 <p>
                   This a myDiary app which has functionalities of Create, Read,
                   Update and Delete a Text.
@@ -110,7 +110,7 @@ const Projects = () => {
               </p>
 
               {/* buttons  */}
-              <div className="buttons flex my-2 justify-center gap-4">
+              <div className="buttons text-sm md:text-[16px] flex my-2 justify-center gap-4">
                 {/* button-1  */}
                 <div className="view_demo ">
                   <a
@@ -149,10 +149,10 @@ const Projects = () => {
               <Image src={newsPaper} alt="newsPaper" className="rounded" />
             </div>
             <div className="md:ml-6 text-center">
-              <p className="mb-2 text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
+              <p className="mb-2 text-xl md:text-3xl text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
                 Khabri<span className="text-blue-400">Bhai</span> App
               </p>
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-sm md:text-[16px]">
                 <p>
                   Khabri Bhai app is a news providing app which keeps us updated
                   with the latest news around the world.
@@ -168,7 +168,7 @@ const Projects = () => {
               </p>
 
               {/* buttons  */}
-              <div className="buttons flex my-2 justify-center gap-4">
+              <div className="buttons text-sm md:text-[16px] flex my-2 justify-center gap-4">
                 {/* button-1  */}
                 <div className="view_demo ">
                   <a
@@ -207,10 +207,10 @@ const Projects = () => {
               <Image src={wordTwin} alt="wordTwin" className="rounded" />
             </div>
             <div className="md:ml-6 text-center">
-              <p className="mb-2 text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
+              <p className="mb-2 text-xl md:text-3xl text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
                 Word<span className="text-blue-400">Twin</span> App
               </p>
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-sm md:text-[16px]">
                 <p>
                   ReactJs made Word Twin app which fetches the synonym or
                   related word of a inputted word.
@@ -222,7 +222,7 @@ const Projects = () => {
               </p>
 
               {/* buttons  */}
-              <div className="buttons flex my-2 justify-center gap-4">
+              <div className="buttons text-sm md:text-[16px] flex my-2 justify-center gap-4">
                 {/* button-1  */}
                 <div className="view_demo ">
                   <a
@@ -261,10 +261,10 @@ const Projects = () => {
               <Image src={todo} alt="traqo" className="rounded" />
             </div>
             <div className="md:ml-6 text-center">
-              <p className="mb-2 text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
+              <p className="mb-2 text-xl md:text-3xl text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
                 Task<span className="text-blue-400">Saver</span> App
               </p>
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-sm md:text-[16px]">
                 <p>
                   ReactJs based App to save ur todo list uses localStorage to
                   save ur task.
@@ -276,7 +276,7 @@ const Projects = () => {
               </p>
 
               {/* buttons  */}
-              <div className="buttons flex my-2 justify-center gap-4">
+              <div className="buttons text-sm md:text-[16px] flex my-2 justify-center gap-4">
                 {/* button-1  */}
                 <div className="view_demo ">
                   <a
@@ -315,10 +315,10 @@ const Projects = () => {
               <Image src={calc} alt="traqo" className="rounded" />
             </div>
             <div className="md:ml-6 text-center">
-              <p className="mb-2 text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
+              <p className="mb-2 text-xl md:text-3xl text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
                 Calculator<span className="text-blue-400">&nbsp; App</span>
               </p>
-              <p className="text-gray-300">
+              <p className="text-gray-300 text-sm md:text-[16px]">
                 <p>
                   This is a Calculator App that performs Addition,
                   Multiplication, Division and Subtraction.
@@ -328,7 +328,7 @@ const Projects = () => {
               </p>
 
               {/* buttons  */}
-              <div className="buttons flex my-2 justify-center gap-4">
+              <div className="buttons text-sm md:text-[16px] flex my-2 justify-center gap-4">
                 {/* button-1  */}
                 <div className="view_demo ">
                   <a href="/" target="_blank">

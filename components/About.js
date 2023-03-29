@@ -10,10 +10,10 @@ import { ImBooks } from "react-icons/im";
 const About = () => {
   return (
     <div className="m-auto w-[83%] pt-[4%]">
-        <span className="text-4xl text-white  border-b-4 border-[#ffdf00]">
+        <span className="text-2xl md:text-4xl text-white  border-b-4 border-[#ffdf00]">
           <span className="text-[#ffdf00]">About</span> Me
         </span>
-        <p className="py-4 text-md md:text-lg text-white ">
+        <p className="py-4 text-sm md:text-lg text-white ">
           I am a junior pursuing BTech from IT branch.I am a hardworking and
           passionate guy trying to grab latest skills and technologies. I like
           practical things more than theories. My Short term goal is to get

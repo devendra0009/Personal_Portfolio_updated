@@ -7,7 +7,7 @@ const Contact = () => {
   return (
     <div>
       <div className="m-auto w-[83%] pt-[4%]">
-        <span className="text-4xl text-white  border-b-4 border-[#ffdf00]">
+        <span className="text-2xl md:text-4xl text-white  border-b-4 border-[#ffdf00]">
           <span className="text-[#ffdf00]">Contact</span> Me
         </span>
         <section className="md:flex md:gap-5">

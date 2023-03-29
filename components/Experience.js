@@ -7,7 +7,7 @@ import izenica from "../public/izenica.png";
 const Experience = () => {
   return (
     <div className="m-auto w-[83%] pt-[4%]">
-      <span className="text-4xl text-[#fff] border-b-4 border-[#ffdf00]">
+      <span className="text-2xl md:text-4xl text-[#fff] border-b-4 border-[#ffdf00]">
         My <span className="text-[#ffdf00]">Experience</span>
       </span>
       

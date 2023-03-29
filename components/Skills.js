@@ -4,8 +4,8 @@ import { FaLanguage } from "react-icons/fa";
 
 const Skills = () => {
   return (
-    <div className="m-auto w-[83%] pt-[4%] text-[#fff]">
-      <span className="text-4xl  border-b-4 border-[#ffdf00]">
+    <div className="m-auto w-[83%] pt-[4%] text-[#fff] text-sm md:text-[16px]">
+      <span className="text-2xl md:text-4xl border-b-4 border-[#ffdf00]">
         My <span className="text-[#ffdf00]">Skills</span>
       </span>
       <div className="mt-8 p-8 bg-black rounded-lg ">
