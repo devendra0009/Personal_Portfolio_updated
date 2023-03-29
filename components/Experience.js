@@ -1,7 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { AiFillEye } from "react-icons/ai";
-import traqo from "../../my-latest-portfolio-next/public/traqo.jpg";
+import traqo from "../public/traqo.jpg";
 import izenica from "../public/izenica.png";
 
 const Experience = () => {
