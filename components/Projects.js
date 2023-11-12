@@ -23,13 +23,14 @@ const Projects = () => {
       </span>
       {/* Carousel  */}
       <div className="bg-black my-8 rounded-lg">
+      
         <Splide
           aria-labelledby="My Projects"
           options={{
             autoplay: true,
             // type: 'loop',
             rewind: true,
-            width: '100%'
+            width: '100%',
           }}
         >
           <SplideSlide>
@@ -38,7 +39,7 @@ const Projects = () => {
                 <Image
                   src={tri2do}
                   alt="traqo"
-                  className="rounded-full w-40 h-40 mx-auto"
+                  className="rounded-full w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 mx-auto"
                 />
               </div>
               <div className="md:ml-6 text-center">
@@ -97,7 +98,7 @@ const Projects = () => {
                 <Image
                   src={ecom}
                   alt="ecomimg"
-                  className="rounded-full w-40 h-40 mx-auto"
+                  className="rounded-full w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 mx-auto"
                 />
               </div>
               <div className="md:ml-6 text-center">
@@ -159,7 +160,7 @@ const Projects = () => {
                 <Image
                   src={mopie}
                   alt="mopie"
-                  className="rounded-full w-40 h-40 mx-auto"
+                  className="rounded-full w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 mx-auto"
                 />
               </div>
               <div className="md:ml-6 text-center">
@@ -219,7 +220,7 @@ const Projects = () => {
                 <Image
                   src={myDiary}
                   alt="traqo"
-                  className="rounded-full w-40 h-40 mx-auto"
+                  className="rounded-full w-24 h-24 sm:w-40 sm:h-40 mx-auto"
                 />
               </div>
               <div className="md:ml-6 text-center">
@@ -281,7 +282,7 @@ const Projects = () => {
                 <Image
                   src={newsPaper}
                   alt="newsPaper"
-                  className="rounded-full w-40 h-40 mx-auto"
+                  className="rounded-full w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 mx-auto"
                 />
               </div>
               <div className="md:ml-6 text-center">
@@ -343,7 +344,7 @@ const Projects = () => {
                 <Image
                   src={wordTwin}
                   alt="wordTwin"
-                  className="rounded-full w-40 h-40 mx-auto"
+                  className="rounded-full w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 mx-auto"
                 />
               </div>
               <div className="md:ml-6 text-center">
@@ -401,7 +402,7 @@ const Projects = () => {
                 <Image
                   src={todo}
                   alt="traqo"
-                  className="rounded-full w-40 h-40 mx-auto"
+                  className="rounded-full w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 mx-auto"
                 />
               </div>
               <div className="md:ml-6 text-center">
@@ -459,7 +460,7 @@ const Projects = () => {
                 <Image
                   src={calc}
                   alt="traqo"
-                  className="rounded-full w-40 h-40 mx-auto"
+                  className="rounded-full w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 mx-auto"
                 />
               </div>
               <div className="md:ml-6 text-center">

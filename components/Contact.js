@@ -71,7 +71,7 @@ const Contact = () => {
           </div>
           <div className="py-4 md:py-14 lg:py-16 grid grid-cols-2 px-4 lg:px-8 md:w-1/2 text-white md:grid-cols-2 dark:bg-gray-700">
             {/* email  */} 
-            <div className=" flex flex-col items-center  border-[#313131] border-b-8 border-r-8 p-2  ">
+            <div className=" flex flex-col items-center  border-[#313131] border-b-2 border-r-2 md:border-b-8 md:border-r-8 p-2  ">
               <div className="wrapper my-auto flex justify-center items-center flex-col">
                 <HiOutlineMail color="red" size={30} className="text-center" />
                 <p className="email_add text-md text-center p-2 ">
@@ -80,7 +80,7 @@ const Contact = () => {
               </div>
             </div>
             {/* Contact  */}
-            <div className=" flex flex-col items-center  border-[#313131] border-b-8  p-2  ">
+            <div className=" flex flex-col items-center  border-[#313131] border-b-2 md:border-b-8  p-2  ">
               <div className="wrapper my-auto flex justify-center items-center flex-col">
                 <span className="cont_icon text-4xl text-green-500">
                   <BsPhone />
@@ -91,7 +91,7 @@ const Contact = () => {
               </div>
             </div>
             {/* add  */}
-            <div className=" flex flex-col items-center border-[#313131] border-r-8 p-2  ">
+            <div className=" flex flex-col items-center border-[#313131] border-r-2 md:border-r-8 p-2  ">
               <div className="wrapper my-auto flex justify-center items-center flex-col">
                 <span className="add_icon text-4xl text-orange-500">
                   <HiOutlineLocationMarker />
