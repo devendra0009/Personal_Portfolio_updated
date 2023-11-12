@@ -1,13 +1,13 @@
-import Head from "next/head";
+import Head from 'next/head';
 // import { BsFillMoonStarsFill } from "react-icons/bs";
-import { AiFillTwitterCircle, AiFillLinkedin } from "react-icons/ai";
-import { SiLeetcode } from "react-icons/si";
-import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
-import { BsPhone } from "react-icons/bs";
-import { FaBirthdayCake } from "react-icons/fa";
-import myimg from "../../public/myimg.png";
-import Image from "next/image";
-import MyTabs from "../../components/MyTabs";
+import { AiFillTwitterCircle, AiFillLinkedin } from 'react-icons/ai';
+import { SiLeetcode } from 'react-icons/si';
+import { HiOutlineMail, HiOutlineLocationMarker } from 'react-icons/hi';
+import { BsPhone } from 'react-icons/bs';
+import { FaBirthdayCake } from 'react-icons/fa';
+import myimg from '../../public/myimg.png';
+import Image from 'next/image';
+import MyTabs from '../../components/MyTabs';
 
 export default function Home() {
   return (
@@ -19,9 +19,9 @@ export default function Home() {
       </Head>
       <main className="rgb(26 26 26/var(--tw-bg-opacity)) text-black  md:p-10  lg:py-8 ">
         <section className="bg-[#313131] px-8 pb-16  rounded-lg">
-        {/* wrapper for m,sm dev  */}
+          {/* wrapper for m,sm dev  */}
           <div className="w-[200px] mx-auto ">
-            <Image src={myimg}  alt="my_image" />
+            <Image src={myimg} alt="my_image" />
           </div>
           <div className="text-center">
             <h2 className="text-4xl text-[#ffdf00] font-medium">
@@ -32,38 +32,38 @@ export default function Home() {
             </h3>
           </div>
           {/* bg-black */}
-            <hr className="my-8 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
+          <hr className="my-8 h-0.5 border-t-0 bg-neutral-100 opacity-100 dark:opacity-50" />
           <div className="grid md:grid-cols-2 gap-2">
-            <div className="rounded-lg flex  bg-black text-[#ffdf00] "> 
+            <div className="rounded-lg flex  bg-black text-[#ffdf00] hover:scale-[101%]">
               <div className="my-auto p-3">
-                <HiOutlineMail className="text-xl"/>
+                <HiOutlineMail className="text-xl" />
               </div>
               <div className="py-2 break-all">
                 <p className=" text-sm">Email</p>
                 <p className=" text-md">devendrabedwal4@gmail.com</p>
               </div>
             </div>
-            <div className="  bg-black text-[#ffdf00] rounded-lg flex "> 
+            <div className="  bg-black text-[#ffdf00] rounded-lg flex hover:scale-[101%]">
               <div className="my-auto p-3">
-                <BsPhone className="text-xl"/>
+                <BsPhone className="text-xl" />
               </div>
               <div className="py-2 break-all">
                 <p className=" text-sm">Phone</p>
                 <p className=" text-md">+91-9311986780</p>
               </div>
             </div>
-            <div className="  bg-black text-[#ffdf00]  rounded-lg flex ">
+            <div className="  bg-black text-[#ffdf00]  rounded-lg flex hover:scale-[101%]">
               <div className="my-auto p-3">
-                <FaBirthdayCake className="text-xl"/>
+                <FaBirthdayCake className="text-xl" />
               </div>
               <div className="py-2 break-all">
                 <p className=" text-sm">BirthDay</p>
                 <p className=" text-md">25th August 2003</p>
               </div>
             </div>
-            <div className="  bg-black text-[#ffdf00] rounded-lg flex ">
+            <div className="  bg-black text-[#ffdf00] rounded-lg flex hover:scale-[101%]">
               <div className="my-auto p-3">
-                <HiOutlineLocationMarker className="text-xl"/>
+                <HiOutlineLocationMarker className="text-xl" />
               </div>
               <div className="py-2 pr-4 break-all">
                 <p className=" text-sm">Location</p>
@@ -72,17 +72,22 @@ export default function Home() {
             </div>
           </div>
           <div className="text-4xl hidden xsm:flex  pt-8 justify-center gap-8 text-[#ffdf00]">
-          <a href="https://leetcode.com/0-index/" target="_blank">
-            <SiLeetcode />
+            <a href="https://leetcode.com/0-index/" target="_blank">
+              <SiLeetcode  className='hover:scale-x-110 hover:scale-y-110'/>
             </a>
-            <a href="https://www.linkedin.com/in/davendra-bedwal-09608b232/" target="_blank">
-            <AiFillLinkedin /></a>
+            <a
+              href="https://www.linkedin.com/in/davendra-bedwal-09608b232/"
+              target="_blank"
+            >
+              <AiFillLinkedin  className='hover:scale-x-110 hover:scale-y-110'/>
+            </a>
             <a href="" target="_blank">
-            <AiFillTwitterCircle /></a>
+              <AiFillTwitterCircle className='hover:scale-x-110 hover:scale-y-110' />
+            </a>
           </div>
         </section>
         <section className=" rounded-lg bg-[#313131] pb-10 relative">
-          <MyTabs/>
+          <MyTabs />
         </section>
       </main>
     </>

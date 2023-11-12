@@ -14,7 +14,7 @@ const About = () => {
           <span className="text-[#ffdf00]">About</span> Me
         </span>
         <p className="py-4 text-sm md:text-lg text-white ">
-          I am a junior pursuing BTech from IT branch.I am a hardworking and
+          I am a senior pursuing BTech from IT branch.I am a hardworking and
           passionate guy trying to grab latest skills and technologies. I like
           practical things more than theories. My Short term goal is to get
           placed in a reputed firm as a Software developer engineer in the next
@@ -23,7 +23,7 @@ const About = () => {
       <div className="text-[#fff] md:flex md:gap-4">
         <p>
           <span className="text-[#ffdf00]">Age:</span>
-          <span>&nbsp;19</span>
+          <span>&nbsp;20</span>
         </p>
         <p>
           <span className="text-[#ffdf00]">Gender:</span>
@@ -39,7 +39,7 @@ const About = () => {
         </p>
       </div>
         <div className="view my-6">
-          <a href="https://drive.google.com/file/d/108bAzaieUngRknmm5EAclcwUenXmiKFb/view" target="_blank">
+          <a href="https://docs.google.com/document/d/1xTbttiPDbCPtrj6FkjVA44YPz6CaHbJ5Xs9dLWTttOA/edit?usp=sharing" target="_blank">
             <button
               type="button"
               className=" text-white flex items-center text-md md:text-xl rounded border-2 p-3 hover:bg-[#ffdf00] hover:text-black"
@@ -56,7 +56,7 @@ const About = () => {
           <MdOutlineInterests className="text-2xl" />
           <h2 className="text-lg md:text-2xl ">Hobbies & Interest</h2>
         </div>
-        <div className="grid grid-cols-1 xsm:grid-cols-2 sm:grid-cols-3 md:grid-cols-4 xl:grid-cols-5 gap-4 text-white ">
+        <div className="grid grid-cols-1 xsm:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 xl:grid-cols-5 gap-4 text-white place-items-center">
           <div className="coding  mx-auto md:mx-0">
             <button
               type="button"
