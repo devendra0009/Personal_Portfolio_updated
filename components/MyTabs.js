@@ -1,28 +1,58 @@
-import { Tab } from '@headlessui/react';
-import About from './About';
-import Contact from './Contact';
-import Experience from './Experience';
-import Projects from './Projects';
-import Skills from './Skills';
+import { Tab } from "@headlessui/react";
+import About from "./About";
+import Contact from "./Contact";
+import Experience from "./Experience";
+import Projects from "./Projects";
+import Skills from "./Skills";
 
 const MyTabs = () => {
   return (
     <div className="w-full px-2 sm:px-0">
       <Tab.Group>
-        <Tab.List className="flex space-x-1 rounded-xl  bg-black text-[#ffdf00] p-1">
-          <Tab className="w-full text-lg rounded-lg py-2.5  font-medium  outline-none hover:scale-x-110 hover:scale-y-110">
+        <Tab.List className="flex space-x-1 rounded-xl bg-black text-[#ffdf00] p-1">
+          <Tab
+            className={({ selected, hover }) =>
+              `w-full text-lg rounded-lg py-2.5 font-medium outline-none  ${
+                selected ? "bg-[#ffdf00]" : ""
+              } ${selected ? " text-black" : ""} ${hover?" bg-yellow-200":""}`
+            }
+          >
             About
           </Tab>
-          <Tab className="w-full rounded-lg py-2.5 text-lg  font-medium  outline-none hover:scale-x-110 hover:scale-y-110 ">
+          <Tab
+            className={({ selected, hover }) =>
+              `w-full rounded-lg py-2.5 text-lg font-medium outline-none  ${
+                selected ? "bg-[#ffdf00]" : ""
+              } ${selected ? " text-black" : ""} ${hover?" bg-yellow-200":""}`
+            }
+          >
             Experience
           </Tab>
-          <Tab className="w-full rounded-lg py-2.5 text-lg  font-medium  outline-none hover:scale-x-110 hover:scale-y-110 ">
+          <Tab
+            className={({ selected, hover }) =>
+              `w-full rounded-lg py-2.5 text-lg font-medium outline-none  ${
+                selected ? "bg-[#ffdf00]" : ""
+              } ${selected ? " text-black" : ""} ${hover?" bg-yellow-200":""}`
+            }
+          >
             Skills
           </Tab>
-          <Tab className="w-full rounded-lg py-2.5 text-lg font-medium   outline-none hover:scale-x-110 hover:scale-y-110">
+          <Tab
+            className={({ selected, hover }) =>
+              `w-full rounded-lg py-2.5 text-lg font-medium outline-none  ${
+                selected ? "bg-[#ffdf00]" : ""
+              } ${selected ? " text-black" : ""} ${hover?" bg-yellow-200":""}`
+            }
+          >
             Project
           </Tab>
-          <Tab className="w-full rounded-lg py-2.5 text-lg font-medium  outline-none  hover:scale-x-110 hover:scale-y-110">
+          <Tab
+            className={({ selected, hover }) =>
+              `w-full rounded-lg py-2.5 text-lg font-medium outline-none  ${
+                selected ? "bg-[#ffdf00]" : ""
+              } ${selected ? " text-black" : ""} ${hover?" bg-yellow-200":""}`
+            }
+          >
             Contact
           </Tab>
         </Tab.List>

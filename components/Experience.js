@@ -1,9 +1,10 @@
-import Image from 'next/image';
-import React from 'react';
-import { AiFillEye } from 'react-icons/ai';
-import traqo from '../public/traqo.jpg';
-import izenica from '../public/izenica.png';
-import heliverse from '../public/heliverse.png';
+import Image from "next/image";
+import React from "react";
+import { AiFillEye } from "react-icons/ai";
+import traqo from "../public/traqo.jpg";
+import izenica from "../public/izenica.png";
+import heliverse from "../public/heliverse.png";
+import grayopus from "../public/grayopus.webp";
 
 const Experience = () => {
   return (
@@ -13,11 +14,117 @@ const Experience = () => {
       </span>
 
       <div className="md:grid md:gap-2 lg:grid-cols-2 xl:grid-cols-3">
+        {/* Grayopus  */}
+        <section class="rounded-md p-7 mt-7 text-center bg-black shadow-lg  md:text-centerm md:flex  md:justify-center md:items-center">
+          {/* <div class="flex justify-center"> */}
+          {/* <div class="m-4 block rounded-lg  p-6 shadow-lg dark:bg-neutral-800 dark:shadow-black/20"> */}
+          <div class="">
+            <div class=" mb-6  lg:mb-0">
+              <Image
+                src={grayopus}
+                alt="traqo"
+                className=" mx-auto rounded-md bg-white p-2 w-40 mb-4"
+              />
+            </div>
+            <div class="md:ml-6">
+              <p class="mb-2 text-xl font-semibold text-neutral-800 dark:text-neutral-200">
+                Grayopus
+              </p>
+              <p class="mb-0 font-semibold text-[#ffdf00] ">Full stack dev</p>
+              <p class="text-sm md:text-[16px] text-gray-300">
+                <p>
+                  ● Enhanced internal projects and fixed bugs using React and
+                  Redux for efficient front-end performance.
+                </p>
+                <p>
+                  ● Developed scalable backend systems with Java Spring Boot and
+                  managed PostgreSQL databases
+                </p>
+                <p>
+                  ● Designed RESTful APIs and integrated WebSocket communication
+                  for real-time web interactions.
+                </p>
+              </p>
+              <div className="view mb-4">
+                <a
+                  href="https://grayopus.com"
+                  target="_blank"
+                >
+                  <button
+                    type="button"
+                    className="bg-black  mx-auto text-[#ffdf00] my-3 md:py-2  flex items-center text-md border-[#ffdf00] border-2 rounded p-2 bg-primary hover:bg-[#ffdf00] hover:border-white hover:text-black mt-4"
+                  >
+                    <AiFillEye className=" text-xl mr-2" />
+                    Offer Letter
+                  </button>
+                </a>
+              </div>
+            </div>
+            {/* </div> */}
+            {/* </div> */}
+          </div>
+        </section>
+        {/* Heliverse  */}
+        <section class="rounded-md p-7 mt-7 text-center bg-black shadow-lg  md:text-center">
+          {/* <div class="flex justify-center"> */}
+          {/* <div class="m-4 block rounded-lg  p-6 shadow-lg dark:bg-neutral-800 dark:shadow-black/20"> */}
+          <div class="">
+            <div class=" mb-6  lg:mb-0">
+              <Image
+                src={heliverse}
+                alt="traqo"
+                className=" mx-auto rounded-full bg-white p-2 w-40 mb-4"
+              />
+            </div>
+            <div class="md:ml-6">
+              <p class="mb-2 text-xl font-semibold text-neutral-800 dark:text-neutral-200">
+                Heliverse
+              </p>
+              <p class="mb-0 font-semibold text-[#ffdf00] ">
+                JS Developer Intern
+              </p>
+              <p class="text-sm md:text-[16px] text-gray-300">
+                <p>
+                  ● Developed and designed the main and Admin pages for
+                  &apos;Sell your Gadgets&apos;.
+                </p>
+                <p>
+                  ● Created the app&apos;s frontend, integrated APIs, and
+                  deployed it on AWS.
+                </p>
+                <p>
+                  ● Utilized JavaScript, ReactJS, SolidJS, Styled-components,
+                  Material-UI, and React-hook-forms for implementation.
+                </p>
+              </p>
+              <div className="view mb-4">
+                <a
+                  href="https://drive.google.com/file/d/1hkezdm15gB-XCijjd_FccDU3f5M710jK/view?usp=drive_link"
+                  target="_blank"
+                >
+                  <button
+                    type="button"
+                    className="bg-black  mx-auto text-[#ffdf00] my-3 md:py-2  flex items-center text-md border-[#ffdf00] border-2 rounded p-2 bg-primary hover:bg-[#ffdf00] hover:border-white hover:text-black mt-4"
+                  >
+                    <AiFillEye className=" text-xl mr-2" />
+                    Offer Letter
+                  </button>
+                </a>
+              </div>
+            </div>
+            {/* </div> */}
+            {/* </div> */}
+          </div>
+        </section>
         {/* izenica  */}
         <section class=" rounded-md p-7 mt-7 text-center bg-black shadow-lg  md:text-center">
           <div class=" ">
-          <div class=" mb-6  lg:mb-0 ">
-              <Image src={izenica} alt="izenica" className=" mx-auto rounded-full bg-white p-2 w-40 mb-4" />
+            <div class=" mb-6  lg:mb-0 ">
+              <Image
+                src={izenica}
+                alt="izenica"
+                className=" mx-auto rounded-full bg-white p-2 w-40 mb-4"
+              />
             </div>
             <div class="md:ml-6">
               <p class="mb-2 text-xl font-semibold text-neutral-800 dark:text-neutral-200">
@@ -67,7 +174,11 @@ const Experience = () => {
           {/* <div class="m-4 block rounded-lg  p-6 shadow-lg dark:bg-neutral-800 dark:shadow-black/20"> */}
           <div class="">
             <div class=" mb-6  lg:mb-0">
-              <Image src={traqo} alt="traqo" className=" mx-auto rounded-full p-2 bg-white w-40 mb-4" />
+              <Image
+                src={traqo}
+                alt="traqo"
+                className=" mx-auto rounded-full p-2 bg-white w-40 mb-4"
+              />
             </div>
             <div class="md:ml-6">
               <p class="mb-2 text-xl font-semibold text-neutral-800 dark:text-neutral-200">
@@ -84,7 +195,7 @@ const Experience = () => {
                 <p>
                   ● Worked on React-Google-Maps to implement the markers,
                   polylining and routing functionalities using data sent by Post
-                  request.{' '}
+                  request.{" "}
                 </p>
                 <p>
                   ● Designed a Kyc page which shows user’s realtime detailsof
@@ -108,52 +219,6 @@ const Experience = () => {
                   >
                     <AiFillEye className=" text-xl mr-2" />
                     Completion Letter
-                  </button>
-                </a>
-              </div>
-            </div>
-            {/* </div> */}
-            {/* </div> */}
-          </div>
-        </section>
-        {/* Heliverse  */}
-        <section class="rounded-md p-7 mt-7 text-center bg-black shadow-lg  md:text-center">
-          {/* <div class="flex justify-center"> */}
-          {/* <div class="m-4 block rounded-lg  p-6 shadow-lg dark:bg-neutral-800 dark:shadow-black/20"> */}
-          <div class="">
-            <div class=" mb-6  lg:mb-0">
-              <Image src={heliverse} alt="traqo" className=" mx-auto rounded-full bg-white p-2 w-40 mb-4" />
-            </div>
-            <div class="md:ml-6">
-              <p class="mb-2 text-xl font-semibold text-neutral-800 dark:text-neutral-200">
-                Heliverse
-              </p>
-              <p class="mb-0 font-semibold text-[#ffdf00] ">
-                JS Developer Intern
-              </p>
-              <p class="text-sm md:text-[16px] text-gray-300">
-                <p>
-                ● Developed and designed the main and Admin pages for &apos;Sell your Gadgets&apos;.
-                </p>
-                <p>
-                  ● Created the app&apos;s frontend, integrated APIs, and deployed it on AWS.
-                </p>
-                <p>
-                  ● Utilized JavaScript, ReactJS, SolidJS, Styled-components, Material-UI, and React-hook-forms
-for implementation.
-                </p>
-              </p>
-              <div className="view mb-4">
-                <a
-                  href="https://drive.google.com/file/d/1hkezdm15gB-XCijjd_FccDU3f5M710jK/view?usp=drive_link"
-                  target="_blank"
-                >
-                  <button
-                    type="button"
-                    className="bg-black  mx-auto text-[#ffdf00] my-3 md:py-2  flex items-center text-md border-[#ffdf00] border-2 rounded p-2 bg-primary hover:bg-[#ffdf00] hover:border-white hover:text-black mt-4"
-                  >
-                    <AiFillEye className=" text-xl mr-2" />
-                    Offer Letter
                   </button>
                 </a>
               </div>

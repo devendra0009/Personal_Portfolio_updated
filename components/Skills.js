@@ -1,18 +1,31 @@
-import React from 'react';
-import { GiSkills, GiComputing, GiTalk } from 'react-icons/gi';
-import { AiFillHtml5 } from 'react-icons/ai';
-import { RiSpeakLine, RiTeamLine } from 'react-icons/ri';
-import { DiCss3 } from 'react-icons/di';
-import { GrMysql } from 'react-icons/gr';
+import React from "react";
+import { GiSkills, GiComputing, GiTalk } from "react-icons/gi";
+import { AiFillHtml5 } from "react-icons/ai";
+import { RiSpeakLine, RiTeamLine } from "react-icons/ri";
+import { DiCss3 } from "react-icons/di";
+import { GrMysql } from "react-icons/gr";
+import { SiRedux, SiSpringboot } from "react-icons/si";
 import {
   SiJavascript,
   SiMongodb,
   SiThealgorithms,
   SiTailwindcss,
-  SiExpress
-} from 'react-icons/si';
-import { FaLanguage, FaReact , FaNodeJs, FaLinux, FaAssistiveListeningSystems} from 'react-icons/fa';
-import { TbBrandCpp, TbBinaryTree, TbNetwork, TbLanguageHiragana } from 'react-icons/tb';
+  SiExpress,
+} from "react-icons/si";
+import {
+  FaLanguage,
+  FaReact,
+  FaNodeJs,
+  FaLinux,
+  FaAssistiveListeningSystems,
+  FaJava,
+} from "react-icons/fa";
+import {
+  TbBrandCpp,
+  TbBinaryTree,
+  TbNetwork,
+  TbLanguageHiragana,
+} from "react-icons/tb";
 
 const Skills = () => {
   return (
@@ -51,13 +64,21 @@ const Skills = () => {
             <div className="mb-1 font-medium text-md">JAVASCRIPT</div>
           </div>
           {/* DSA  */}
-          <div className="dsa  flex items-center gap-2">
+          {/* <div className="dsa  flex items-center gap-2">
             <TbBinaryTree size={30} color="gray" />
             <span className="mb-1 font-medium text-md">DATA STRUCTURES</span>
           </div>
           <div className="dsa  flex items-center gap-2">
             <SiThealgorithms size={30} />
             <span className="mb-1 font-medium text-md">ALGORITHMS</span>
+          </div> */}
+          <div className="dsa  flex items-center gap-2">
+            <FaJava size={30} color="red" />
+            <span className="mb-1 font-medium text-md">JAVA</span>
+          </div>
+          <div className="dsa  flex items-center gap-2">
+            <SiSpringboot size={30} color="#6aae3c"/>
+            <span className="mb-1 font-medium text-md">SPRINGBOOT</span>
           </div>
 
           {/* tech-skills-2  */}
@@ -66,6 +87,11 @@ const Skills = () => {
           <div className="react flex items-center gap-2">
             <FaReact size={30} color="lightBlue" />
             <div className="mb-1 font-medium text-md">REACTJS</div>
+          </div>
+          {/* Redux  */}
+          <div className="react flex items-center gap-2">
+            <SiRedux size={30} color="purple" />
+            <div className="mb-1 font-medium text-md">REDUX</div>
           </div>
           {/* TAILcss  */}
           <div className="tail-css flex items-center gap-2">
@@ -95,7 +121,6 @@ const Skills = () => {
         </div>
       </div>
 
-
       {/* Soft-skills  */}
       <div className="mt-8 p-8 bg-black rounded-lg ">
         <div className="flex gap-1 items-center pb-4 text-[#ffdf00]">
@@ -105,22 +130,22 @@ const Skills = () => {
         <div className="grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4  tech-skills-2">
           {/* PS */}
           <div className="PS flex items-center gap-2">
-            <GiComputing color='purple' size={30}/>
+            <GiComputing color="purple" size={30} />
             <div className="mb-1 font-medium text-md">PROBLEM SOLVING</div>
           </div>
           {/* COMMUNICATION   */}
           <div className="comm flex items-center gap-2">
-            <GiTalk color='blue' size={30}/>
+            <GiTalk color="blue" size={30} />
             <div className="mb-1 font-medium text-md">COMMUNICATION</div>
           </div>
           {/* LISTENING */}
           <div className="listening flex items-center gap-2">
-          <FaAssistiveListeningSystems color='orange' size={30}/>
+            <FaAssistiveListeningSystems color="orange" size={30} />
             <div className="mb-1 font-medium text-md">LISTENING</div>
           </div>
           {/* TEAML PLAYER */}
           <div className="tp  flex items-center gap-2">
-          <RiTeamLine color='pink' size={30}/>
+            <RiTeamLine color="pink" size={30} />
             <div className="mb-1 font-medium text-md">TEAM PLAYER</div>
           </div>
         </div>
@@ -135,12 +160,12 @@ const Skills = () => {
         <div className="grid grid-cols-2 sm:grid-cols-3  gap-4  tech-skills-3">
           {/* hindi */}
           <div className="hindi flex items-center gap-2">
-          <FaLanguage size={30} color='pink'/>
+            <FaLanguage size={30} color="pink" />
             <div className="mb-1 font-medium text-md">HINDI</div>
           </div>
           {/* ENGLISH   */}
           <div className="eng flex items-center gap-2">
-          <TbLanguageHiragana size={30} color='orange'/>
+            <TbLanguageHiragana size={30} color="orange" />
             <div className="mb-1 font-medium text-md">ENGLISH</div>
           </div>
         </div>

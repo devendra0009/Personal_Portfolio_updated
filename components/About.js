@@ -10,20 +10,20 @@ import { ImBooks } from "react-icons/im";
 const About = () => {
   return (
     <div className="m-auto w-[83%] pt-[4%]">
-        <span className="text-2xl md:text-4xl text-white  border-b-4 border-[#ffdf00]">
-          <span className="text-[#ffdf00]">About</span> Me
-        </span>
-        <p className="py-4 text-sm md:text-lg text-white ">
-          I am a senior pursuing BTech from IT branch.I am a hardworking and
-          passionate guy trying to grab latest skills and technologies. I like
-          practical things more than theories. My Short term goal is to get
-          placed in a reputed firm as a Software developer engineer in the next
-          few years and have some new life experiences.
-        </p>
+      <span className="text-2xl md:text-4xl text-white  border-b-4 border-[#ffdf00]">
+        <span className="text-[#ffdf00]">About</span> Me
+      </span>
+      <p className="py-4 text-sm md:text-lg text-white ">
+        I am a senior pursuing BTech from IT branch.I am a hardworking and
+        passionate guy trying to grab latest skills and technologies. I like
+        practical things more than theories. My Short term goal is to get placed
+        in a reputed firm as a Software developer engineer in the next few years
+        and have some new life experiences.
+      </p>
       <div className="text-[#fff] md:flex md:gap-4">
         <p>
           <span className="text-[#ffdf00]">Age:</span>
-          <span>&nbsp;20</span>
+          <span>&nbsp;21</span>
         </p>
         <p>
           <span className="text-[#ffdf00]">Gender:</span>
@@ -38,17 +38,20 @@ const About = () => {
           <span>&nbsp;Student</span>
         </p>
       </div>
-        <div className="view my-6">
-          <a href="https://docs.google.com/document/d/1xTbttiPDbCPtrj6FkjVA44YPz6CaHbJ5Xs9dLWTttOA/edit?usp=sharing" target="_blank">
-            <button
-              type="button"
-              className=" text-white flex items-center text-md md:text-xl rounded border-2 p-3 hover:bg-[#ffdf00] hover:text-black"
-            >
-              <AiFillEye className=" text-xl mr-2" />
-              View CV
-            </button>
-          </a>
-        </div>
+      <div className="view my-6">
+        <a
+          href="https://docs.google.com/document/d/1j-2uW381-9CJgBPHK9cndm__XRAJJCi0/edit?usp=sharing&ouid=117162244084866879149&rtpof=true&sd=true"
+          target="_blank"
+        >
+          <button
+            type="button"
+            className=" text-white flex items-center text-md md:text-xl rounded border-2 p-3 hover:bg-[#ffdf00] hover:text-black"
+          >
+            <AiFillEye className=" text-xl mr-2" />
+            View CV
+          </button>
+        </a>
+      </div>
 
       {/* Hobbies and interest  */}
       <div className="mt-4 p-8 bg-black rounded-lg ">
@@ -115,16 +118,14 @@ const About = () => {
           <table className="w-full">
             <thead>
               <tr>
-              <th className="text-start">Institution</th>
-              <th className="text-start">Marks </th>
+                <th className="text-start">Institution</th>
+                <th className="text-start">Marks </th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>
-                Maharaja Surajmal Institute of Technology
-                </td>
-                <td>93.14 cgpa</td>
+                <td>Maharaja Surajmal Institute of Technology</td>
+                <td>9.183 cgpa</td>
               </tr>
             </tbody>
             <tbody>
@@ -164,7 +165,7 @@ const About = () => {
                 <td>BTech</td>
                 <td>Information Technology</td>
                 <td>Maharaja Surajmal Institute of Technology</td>
-                <td>93.14 cgpa</td>
+                <td>9.183 cgpa</td>
                 <td>2020-present</td>
               </tr>
             </tbody>

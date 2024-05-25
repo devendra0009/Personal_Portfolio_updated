@@ -1,19 +1,20 @@
-import React from 'react';
-import { Splide, SplideSlide } from '@splidejs/react-splide';
-import Image from 'next/image';
-import calc from '../public/calc.jpg';
-import myDiary from '../public/mydiary.jpg';
-import todo from '../public/todo.jpg';
-import wordTwin from '../public/wordTwin.jpg';
-import newsPaper from '../public/newsPaper.jpg';
-import tri2do from '../public/tri2do.png';
-import mopie from '../public/mopie.webp';
-import ecom from '../public/ecom.png';
+import React from "react";
+import { Splide, SplideSlide } from "@splidejs/react-splide";
+import Image from "next/image";
+import calc from "../public/calc.jpg";
+import myDiary from "../public/mydiary.jpg";
+import todo from "../public/todo.jpg";
+import wordTwin from "../public/wordTwin.jpg";
+import newsPaper from "../public/newsPaper.jpg";
+import tri2do from "../public/tri2do.png";
+import mopie from "../public/mopie.webp";
+import dpBattle from "../public/dpbattle.jpg";
+import ecom from "../public/ecom.png";
 // Default theme
-import '@splidejs/react-splide/css';
-import '@splidejs/react-splide/css/skyblue';
+import "@splidejs/react-splide/css";
+import "@splidejs/react-splide/css/skyblue";
 // import "@splidejs/react-splide/css/sea-green";
-import '@splidejs/react-splide/css/core';
+import "@splidejs/react-splide/css/core";
 
 const Projects = () => {
   return (
@@ -23,16 +24,78 @@ const Projects = () => {
       </span>
       {/* Carousel  */}
       <div className="bg-black my-8 rounded-lg">
-      
         <Splide
           aria-labelledby="My Projects"
           options={{
             autoplay: true,
             // type: 'loop',
             rewind: true,
-            width: '100%',
+            width: "100%",
           }}
         >
+          <SplideSlide>
+            <div className="slide-1 rounded-md p-7 mt-7 text-center bg-black shadow-lg  md:text-left">
+              <div className="mx-auto mb-3  ">
+                <Image
+                  src={dpBattle}
+                  alt="traqo"
+                  className="rounded-full w-20 h-20 sm:w-32 sm:h-32 md:w-40 md:h-40 mx-auto"
+                />
+              </div>
+              <div className="md:ml-6 text-center">
+                <p className="mb-2 text-xl md:text-3xl font-semibold text-neutral-800 dark:text-neutral-200">
+                  Dp<span className="text-blue-400">Battle</span> App
+                </p>
+                <p className="text-gray-300  text-sm md:text-[16px]">
+                  <p>
+                    Employs MERN stack with Redux for efficient state
+                    management, enabling DP battles and contests, showcasing
+                    user creativity.
+                  </p>
+                  <p>
+                    Integrates tech stacks for an immersive platform, fostering
+                    vibrant community engagement.
+                  </p>
+                  <p>
+                    Techs Used: ReactJS, Redux, ExpressJS, MongoDB,
+                    Vercel/OnRender
+                  </p>
+                </p>
+
+                {/* buttons  */}
+                <div className="buttons text-sm md:text-[16px] flex my-2 justify-center gap-4">
+                  {/* button-1  */}
+                  <div className="view_demo ">
+                    <a
+                      href="https://dp-battle-frontend.vercel.app/login"
+                      target="_blank"
+                    >
+                      <button
+                        type="button"
+                        className="bg-black text-[#ffdf00] mt-2 flex items-center text-md border-[#ffdf00] border-2 rounded p-2 bg-primary"
+                      >
+                        Live Demo
+                      </button>
+                    </a>
+                  </div>
+                  {/* button-2  */}
+                  <div className="view_code ">
+                    <a
+                      href="https://github.com/devendra0009/dpBattleFrontend"
+                      target="_blank"
+                    >
+                      <button
+                        type="button"
+                        className="bg-black text-[#ffdf00] mt-2 flex items-center text-md border-[#ffdf00] border-2 rounded p-2 bg-primary"
+                      >
+                        View Code
+                      </button>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </SplideSlide>
           <SplideSlide>
             <div className="slide-1 rounded-md p-7 mt-7 text-center bg-black shadow-lg  md:text-left">
               <div className="mx-auto mb-3  ">
@@ -472,7 +535,7 @@ const Projects = () => {
                     This is a Calculator App that performs Addition,
                     Multiplication, Division and Subtraction.
                   </p>
-                  Made purely using ReactJS. Concept Used was{' '}
+                  Made purely using ReactJS. Concept Used was{" "}
                   <span className="text-blue-400">useReduce</span> hook.
                 </p>
 
