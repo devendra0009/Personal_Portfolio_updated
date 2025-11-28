@@ -43,7 +43,7 @@ export default function Home() {
               Davendra Bedwal
             </h2>
             <h3 className="text-lg py-2 mt-6 bg-black text-[#ffdf00] break-all rounded-lg">
-              Web Developer and Learner
+              Software Engineer
             </h3>
           </div>
           {/* bg-black */}

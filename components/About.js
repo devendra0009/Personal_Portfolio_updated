@@ -6,6 +6,7 @@ import { BiBookReader } from "react-icons/bi";
 import { IoIosFitness } from "react-icons/io";
 import { AiFillEye } from "react-icons/ai";
 import { ImBooks } from "react-icons/im";
+import { profileConfig } from "../config/config";
 
 const About = () => {
   return (
@@ -13,17 +14,30 @@ const About = () => {
       <span className="text-2xl md:text-4xl text-white  border-b-4 border-[#ffdf00]">
         <span className="text-[#ffdf00]">About</span> Me
       </span>
-      <p className="py-4 text-sm md:text-lg text-white ">
-        I am a senior pursuing BTech from IT branch.I am a hardworking and
-        passionate guy trying to grab latest skills and technologies. I like
-        practical things more than theories. My Short term goal is to get placed
-        in a reputed firm as a Software developer engineer in the next few years
-        and have some new life experiences.
+      <p className="py-4 text-sm md:text-lg text-white">
+        I am currently working as a Java Full Stack Developer at a startup,
+        where I have gained hands-on experience across multiple domains and
+        end-to-end software development. I am passionate about building
+        practical, scalable solutions using modern technologies and continuously
+        improving my technical skills. My focus is on delivering clean,
+        efficient code and understanding real-world problem-solving beyond
+        theoretical concepts. In the coming years, I aim to grow into a strong
+        software engineer, contribute to impactful projects, and expand my
+        professional and personal experiences.
       </p>
+
       <div className="text-[#fff] md:flex md:gap-4">
         <p>
           <span className="text-[#ffdf00]">Age:</span>
-          <span>&nbsp;21</span>
+          <span>
+            &nbsp;
+            {new Date().getFullYear() -
+              2003 -
+              (new Date().getMonth() + 1 < 8 ||
+              (new Date().getMonth() + 1 === 8 && new Date().getDate() < 25)
+                ? 1
+                : 0)}
+          </span>
         </p>
         <p>
           <span className="text-[#ffdf00]">Gender:</span>
@@ -31,16 +45,16 @@ const About = () => {
         </p>
         <p>
           <span className="text-[#ffdf00]">Language:</span>
-          <span>&nbsp;Hindi, English</span>
+          <span>&nbsp;{profileConfig.lang}</span>
         </p>
         <p>
           <span className="text-[#ffdf00]">Profession:</span>
-          <span>&nbsp;Student</span>
+          <span>&nbsp;{profileConfig.role}</span>
         </p>
       </div>
       <div className="view my-6">
         <a
-          href="https://docs.google.com/document/d/1j-2uW381-9CJgBPHK9cndm__XRAJJCi0/edit?usp=sharing&ouid=117162244084866879149&rtpof=true&sd=true"
+          href={profileConfig.cv}
           target="_blank"
         >
           <button
@@ -166,7 +180,7 @@ const About = () => {
                 <td>Information Technology</td>
                 <td>Maharaja Surajmal Institute of Technology</td>
                 <td>9.183 cgpa</td>
-                <td>2020-present</td>
+                <td>2020-2024</td>
               </tr>
             </tbody>
             <tbody>
