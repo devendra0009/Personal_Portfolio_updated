@@ -9,6 +9,32 @@ import { ImBooks } from "react-icons/im";
 import { profileConfig } from "../config/config";
 
 const About = () => {
+  const educationData = [
+    {
+      id: 1,
+      degree: "BTech",
+      field: "Information Technology",
+      institution: "Maharaja Surajmal Institute of Technology",
+      status: "Completed",
+      cgpa: "9.183",
+    },
+    {
+      id: 2,
+      degree: "Higher Secondary",
+      field: "Science",
+      institution: "Evergreen Public School",
+      status: "Completed",
+      cgpa: "95%",
+    },
+    {
+      id: 3,
+      degree: "Secondary School",
+      field: "All Subjects",
+      institution: "NS Public School",
+      status: "Completed",
+      cgpa: "92%",
+    },
+  ];
   return (
     <div className="m-auto w-[83%] pt-[4%]">
       <span className="text-2xl md:text-4xl text-white  border-b-4 border-[#ffdf00]">
@@ -53,10 +79,7 @@ const About = () => {
         </p>
       </div>
       <div className="view my-6">
-        <a
-          href={profileConfig.cv}
-          target="_blank"
-        >
+        <a href={profileConfig.cv} target="_blank">
           <button
             type="button"
             className=" text-white flex items-center text-md md:text-xl rounded border-2 p-3 hover:bg-[#ffdf00] hover:text-black"
@@ -157,49 +180,61 @@ const About = () => {
           </table>
         </div>
       </div>
-      {/* Education  */}
-      <div className="mt-8 p-8 bg-black rounded-lg hidden md:grid">
-        <div className="flex gap-1 items-center pb-4 text-[#ffdf00]">
+      {/* Education - Beautiful Table */}
+      <div className="mt-8 p-6 bg-black rounded-lg border-[#ffdf00]">
+        <div className="flex gap-2 items-center pb-6 text-[#ffdf00]">
           <ImBooks className="text-2xl" />
-          <h2 className="text-2xl">Education</h2>
+          <h2 className="text-2xl font-semibold">Education</h2>
         </div>
-        <div className="text-white">
-          <table className="w-full">
+
+        <div className="overflow-x-auto">
+          <table className="w-full border-collapse">
             <thead>
-              <tr>
-                <th className="text-start">Degree</th>
-                <th className="text-start">Branch</th>
-                <th className="text-start">Institution/School</th>
-                <th className="text-start">Percentage Obtained</th>
-                <th className="text-start">Graduated Year</th>
+              <tr className="bg-[#ffdf00] text-black">
+                <th className="px-4 py-3 text-left font-semibold border-2 border-[#ffdf00]">
+                  Degree
+                </th>
+                <th className="px-4 py-3 text-left font-semibold border-2 border-[#ffdf00]">
+                  Field
+                </th>
+                <th className="px-4 py-3 text-left font-semibold border-2 border-[#ffdf00]">
+                  Institution
+                </th>
+                <th className="px-4 py-3 text-center font-semibold border-2 border-[#ffdf00]">
+                  Status
+                </th>
+                <th className="px-4 py-3 text-center font-semibold border-2 border-[#ffdf00]">
+                  Score
+                </th>
               </tr>
             </thead>
             <tbody>
-              <tr>
-                <td>BTech</td>
-                <td>Information Technology</td>
-                <td>Maharaja Surajmal Institute of Technology</td>
-                <td>9.183 cgpa</td>
-                <td>2020-2024</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>Higher Secondary School</td>
-                <td>Science (PCM)</td>
-                <td>Evergreen Public School</td>
-                <td>95%</td>
-                <td>2018-2020</td>
-              </tr>
-            </tbody>
-            <tbody>
-              <tr>
-                <td>Secondary School</td>
-                <td>All Subjects</td>
-                <td>NS Public School</td>
-                <td>92%</td>
-                <td>till 2018</td>
-              </tr>
+              {educationData.map((edu) => (
+                <tr
+                  key={edu.id}
+                  className="border-b-2 border-[#ffdf00] hover:bg-gray-900 transition text-white"
+                >
+                  <td className="px-4 py-4 font-semibold text-[#ffdf00] border-[#ffdf00]">
+                    {edu.degree}
+                  </td>
+                  <td className="px-4 py-4">{edu.field}</td>
+                  <td className="px-4 py-4">{edu.institution}</td>
+                  <td className="px-4 py-4 text-center">
+                    <span
+                      className={`px-3 py-1 rounded font-semibold text-sm ${
+                        edu.status === "Current"
+                          ? "bg-[#ffdf00] text-black"
+                          : "bg-gray-700 text-[#ffdf00]"
+                      }`}
+                    >
+                      {edu.status}
+                    </span>
+                  </td>
+                  <td className="px-4 py-4 text-center font-bold text-[#ffdf00]">
+                    {edu.cgpa}
+                  </td>
+                </tr>
+              ))}
             </tbody>
           </table>
         </div>
