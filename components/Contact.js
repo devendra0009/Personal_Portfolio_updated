@@ -1,7 +1,7 @@
-import React from 'react';
-import { HiOutlineMail, HiOutlineLocationMarker } from 'react-icons/hi';
-import { BsPhone } from 'react-icons/bs';
-import { AiFillLinkedin } from 'react-icons/ai';
+import React from "react";
+import { HiOutlineMail, HiOutlineLocationMarker } from "react-icons/hi";
+import { BsPhone } from "react-icons/bs";
+import { AiFillLinkedin } from "react-icons/ai";
 
 const Contact = () => {
   return (
@@ -29,21 +29,7 @@ const Contact = () => {
                   id="email"
                   className=" text-sm rounded-lg  block w-full p-2.5 dark:bg-[#313131] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:outline-none"
                   placeholder="xyz@gmail.com"
-                  required
-                />
-              </div>
-              <div>
-                <label
-                  for="subject"
-                  className="block mb-2 text-md font-medium text-white"
-                >
-                  Subject
-                </label>
-                <input
-                  type="text"
-                  id="subject"
-                  className="block p-3 w-full text-sm text-gray-900 bg-gray-50 rounded-lg  shadow-sm  dark:bg-[#313131] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:outline-none"
-                  placeholder="Let Davendra know how can he help you"
+                  name="email"
                   required
                 />
               </div>
@@ -59,6 +45,7 @@ const Contact = () => {
                   rows="6"
                   className="block p-2.5 w-full text-sm text-gray-900 bg-gray-50 rounded-lg shadow-sm dark:bg-[#313131] dark:border-gray-600 dark:placeholder-gray-400 dark:text-white focus:outline-none"
                   placeholder="Leave a comment..."
+                  name="message"
                 ></textarea>
               </div>
               <button
@@ -70,7 +57,7 @@ const Contact = () => {
             </form>
           </div>
           <div className="py-4 md:py-14 lg:py-16 grid grid-cols-2 px-4 lg:px-8 md:w-1/2 text-white md:grid-cols-2 dark:bg-gray-700">
-            {/* email  */} 
+            {/* email  */}
             <div className=" flex flex-col items-center  border-[#313131] border-b-2 border-r-2 md:border-b-8 md:border-r-8 p-2  ">
               <div className="wrapper my-auto flex justify-center items-center flex-col">
                 <HiOutlineMail color="red" size={30} className="text-center" />
@@ -108,12 +95,12 @@ const Contact = () => {
                   <AiFillLinkedin />
                 </span>
                 <p className="linkedin text-md text-center p-1">
-                  Connect Socially with me at{' '}
+                  Connect Socially with me at{" "}
                   <a
                     href="https://www.linkedin.com/in/davendra-bedwal-09608b232/"
                     target="_blank"
                   >
-                    {' '}
+                    {" "}
                     <span className="">Linkedin</span>
                   </a>
                 </p>

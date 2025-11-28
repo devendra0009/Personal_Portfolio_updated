@@ -67,7 +67,7 @@ const Projects = () => {
                   {/* button-1  */}
                   <div className="view_demo ">
                     <a
-                      href="https://dp-battle-frontend.vercel.app/login"
+                      href="https://dp-battle-frontend.vercel.app"
                       target="_blank"
                     >
                       <button
